@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Ride | Glide</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/ride.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">⚡ Glide</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ride.html" class="active">Book a Ride</a></li>
+                <li><a href="driver.html">Become a Driver</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Booking Workspace -->
+    <div class="container">
+        <div class="ride-wrapper">
+
+            <!-- Sidebar Form -->
+            <div class="booking-sidebar">
+                <h2 style="margin-bottom: 20px;">Request a Ride</h2>
+                
+                <form id="rideForm">
+                    <div class="form-group">
+                        <label for="pickupInput">Pickup Location</label>
+                        <input type="text" id="pickupInput" class="form-control" placeholder="Enter landmark or street" value="KM4 Square, Mogadishu">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dropoffInput">Destination</label>
+                        <input type="text" id="dropoffInput" class="form-control" placeholder="Where to?" value="Liido Beach Resort">
+                    </div>
+
+                    <label style="font-weight: 600; font-size: 14px; display: block; margin-bottom: 10px;">Select Ride Type</label>
+                    
+                    <!-- Option 1: Bajaj / TukTuk -->
+                    <div class="ride-option selected" onclick="selectRide(this)">
+                        <div class="ride-info">
+                            <h4>🛺 Glide Auto (TukTuk)</h4>
+                            <p>Fastest through traffic • 3 mins away</p>
+                        </div>
+                        <div class="ride-price">
+                            $1.50
+                            <div style="font-size: 10px; font-weight: 400; color: var(--text-muted);">~40,000 SOS</div>
+                        </div>
+                    </div>
+
+                    <!-- Option 2: Standard Car -->
+                    <div class="ride-option" onclick="selectRide(this)">
+                        <div class="ride-info">
+                            <h4>🚗 Glide Go (Sedan)</h4>
+                            <p>Comfortable A/C rides • 5 mins away</p>
+                        </div>
+                        <div class="ride-price">
+                            $3.50
+                            <div style="font-size: 10px; font-weight: 400; color: var(--text-muted);">~94,000 SOS</div>
+                        </div>
+                    </div>
+
+                    <!-- Option 3: XL / SUV -->
+                    <div class="ride-option" onclick="selectRide(this)">
+                        <div class="ride-info">
+                            <h4>🚙 Glide XL (SUV)</h4>
+                            <p>For groups & luggage • 8 mins away</p>
+                        </div>
+                        <div class="ride-price">
+                            $6.00
+                            <div style="font-size: 10px; font-weight: 400; color: var(--text-muted);">~162,000 SOS</div>
+                        </div>
+                    </div>
+
+                    <!-- Payment Method Select -->
+                    <div class="form-group" style="margin-top: 20px;">
+                        <label for="payment">Payment Method</label>
+                        <select id="payment" class="form-control">
+                            <option value="evc">EVC Plus / Mobile Money</option>
+                            <option value="cash">Cash to Driver</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full" style="padding: 16px;">Confirm Glide Ride</button>
+                </form>
+            </div>
+
+            <!-- Map Display Area -->
+            <div class="map-container">
+                <div class="map-overlay-badge">📍 Map API (Live Drivers Near You)</div>
+                <div style="text-align: center; color: var(--text-muted);">
+                    <div style="font-size: 48px; margin-bottom: 12px;">🗺️</div>
+                    <p>Map View Active</p>
+                    <small>Integrate Leaflet.js or Google Maps JS SDK here</small>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

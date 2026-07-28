@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive with Glide | Earn on Your Schedule</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/driver.css">
+
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">⚡ Glide</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ride.html">Book a Ride</a></li>
+                <li><a href="driver.html" class="active">Become a Driver</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+        <section class="driver-hero">
+            <div>
+                <h1 style="font-size: 48px; line-height: 1.15; margin-bottom: 20px;">Drive with Glide and Earn Great Money</h1>
+                <p style="font-size: 18px; color: var(--text-muted); margin-bottom: 24px;">
+                    Set your own hours, be your own boss, and connect with thousands of daily riders across Somalia.
+                </p>
+
+                <div style="display: flex; flex-direction: column; gap: 16px;">
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <span style="background: rgba(0, 102, 255, 0.1); color: var(--primary); padding: 8px 12px; border-radius: 50%; font-weight: bold;">1</span>
+                        <span>Weekly direct payouts via EVC Plus or Bank</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <span style="background: rgba(0, 102, 255, 0.1); color: var(--primary); padding: 8px 12px; border-radius: 50%; font-weight: bold;">2</span>
+                        <span>Flexible hours—drive whenever you want</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <span style="background: rgba(0, 102, 255, 0.1); color: var(--primary); padding: 8px 12px; border-radius: 50%; font-weight: bold;">3</span>
+                        <span>24/7 localized support team</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Driver Sign Up Form -->
+            <div class="driver-form-card">
+                <h3 style="font-size: 24px; margin-bottom: 8px;">Apply to Drive</h3>
+                <p style="color: var(--text-muted); margin-bottom: 24px; font-size: 14px;">Takes less than 5 minutes to submit</p>
+
+                <form id="driverRegisterForm">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" class="form-control" placeholder="e.g., Mohamed Ali" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number (EVC Plus Registered)</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="+252 61 XXX XXXX" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="operatingCity">Primary Operating City</label>
+                        <select id="operatingCity" class="form-control">
+                            <option value="mogadishu">Mogadishu</option>
+                            <option value="hargeisa">Hargeisa</option>
+                            <option value="garowe">Garowe</option>
+                            <option value="kismayo">Kismayo</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="vehicleType">Vehicle Type</label>
+                        <select id="vehicleType" class="form-control">
+                            <option value="tuktuk">Auto Rickshaw / Bajaj</option>
+                            <option value="sedan">Sedan / Standard Car</option>
+                            <option value="suv">SUV / XL Vehicle</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full" style="padding: 16px;">Submit Application</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

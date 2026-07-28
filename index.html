@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glide | Premium Rides Across Somalia</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">⚡ Glide</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="ride.html">Book a Ride</a></li>
+                <li><a href="driver.html">Become a Driver</a></li>
+                <li><a href="ride.html" class="btn btn-primary">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Hero Section -->
+    <main class="container">
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Reliable, Safe Rides Anywhere in Somalia</h1>
+                <p>Book instant rides in Mogadishu, Hargeisa, Garowe, and Kismayo with transparent pricing in USD or SOS.</p>
+                <div style="display: flex; gap: 16px;">
+                    <a href="ride.html" class="btn btn-primary">Request Ride Now</a>
+                    <a href="driver.html" class="btn btn-outline">Drive with Glide</a>
+                </div>
+            </div>
+
+            <!-- Quick Booking Card on Homepage -->
+            <div class="booking-card">
+                <h2>Where to next?</h2>
+                <p style="color: var(--text-muted); margin-bottom: 20px;">Get an instant price quote</p>
+
+                <form action="ride.html" method="GET">
+                    <div class="form-group">
+                        <label for="city">Select City</label>
+                        <select id="city" class="form-control">
+                            <option value="mogadishu">Mogadishu</option>
+                            <option value="hargeisa">Hargeisa</option>
+                            <option value="garowe">Garowe</option>
+                            <option value="kismayo">Kismayo</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pickup">Pickup Location or Landmark</label>
+                        <input type="text" id="pickup" class="form-control" placeholder="e.g., KM4 Junction or Airport">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dropoff">Destination</label>
+                        <input type="text" id="dropoff" class="form-control" placeholder="e.g., Liido Beach">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">Search Available Rides</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Key Features Section -->
+        <section>
+            <h2 style="text-align: center; font-size: 32px;">Why Choose Glide?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div style="font-size: 30px;">💵</div>
+                    <h3>EVC Plus / Zaad Ready</h3>
+                    <p>Pay easily using Mobile Money (EVC Plus, Zaad, Sahal) or cash directly to your driver.</p>
+                </div>
+                <div class="feature-card">
+                    <div style="font-size: 30px;">🛡️</div>
+                    <h3>Vetted Drivers</h3>
+                    <p>All drivers undergo background checks and vehicle inspections to ensure safe travels.</p>
+                </div>
+                <div class="feature-card">
+                    <div style="font-size: 30px;">📍</div>
+                    <h3>Landmark Navigation</h3>
+                    <p>Don't have an exact street address? No problem. Book using popular local landmarks.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>Glide Somalia</h4>
+                <p style="color: #94A3B8; font-size: 14px;">Moving people and cities forward safely and affordably.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Ride</h4>
+                <ul>
+                    <li><a href="ride.html">Book a Ride</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Cities Served</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Driver</h4>
+                <ul>
+                    <li><a href="driver.html">Apply to Drive</a></li>
+                    <li><a href="#">Requirements</a></li>
+                    <li><a href="#">Driver App</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Glide Technologies Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

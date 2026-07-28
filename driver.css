@@ -1,0 +1,19 @@
+        .driver-hero {
+            display: grid;
+            grid-template-columns: 1fr 480px;
+            gap: 48px;
+            padding: 60px 0;
+            align-items: center;
+        }
+
+        .driver-form-card {
+            background: var(--surface);
+            padding: 36px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+        }
+
+        @media (max-width: 900px) {
+            .driver-hero { grid-template-columns: 1fr; }
+        }

@@ -1,0 +1,70 @@
+.ride-wrapper {
+            display: grid;
+            grid-template-columns: 420px 1fr;
+            gap: 24px;
+            margin-top: 32px;
+            min-height: 70vh;
+        }
+
+        .booking-sidebar {
+            background: var(--surface);
+            padding: 28px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            height: fit-content;
+        }
+
+        /* Mock Map Placeholder */
+        .map-container {
+            background: #E5E7EB;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            min-height: 450px;
+        }
+
+        .map-mock-bg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.6;
+        }
+
+        .map-overlay-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--surface);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 13px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        /* Ride Options Selection */
+        .ride-option {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px;
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-sm);
+            margin-bottom: 12px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .ride-option:hover, .ride-option.selected {
+            border-color: var(--primary);
+            background-color: rgba(0, 102, 255, 0.03);
+        }
+
+        .ride-info h4 { font-size: 15px; }
+        .ride-info p { font-size: 12px; color: var(--text-muted); }
+        .ride-price { font-weight: 700; color: var(--text-main); text-align: right; }
